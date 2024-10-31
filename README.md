@@ -26,6 +26,6 @@
 <p>Thông tin khách hàng và nhân viên đều được mã hóa, bảo mật ở mức tối đa.</p>
 <h1>Contact us:</h1>
 <p>+84938574924</p>
-<a href="mailto:tukie04022004@gmail.com">Gửi email cho tôi</a>
+<a href="mailto:tukie04022004@gmail.com?subject=Chào%20bạn&body=Nội%20dung%20ở%20đây">Gửi email cho tôi</a>
 </body>
 </html>
