@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewBag.Title = "Tìm Kiếm";
+}
+
+<style>
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Khoảng cách giữa các sản phẩm */
+        justify-content: flex-start; /* Đặt các sản phẩm về phía trái và giữ khoảng cách giữa chúng */
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    .product {
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        width: 250px;
+        height: 400px;
+    }
+
+        /* Add hover effect for product */
+        .product:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+    /* Styling for the product link */
+    .product-link {
+        text-decoration: none;
+        color: #333;
+    }
+
+    /* Styling for the product title */
+    .product-title {
+        display: -webkit-box; /* Required for webkit browsers */
+        -webkit-line-clamp: 2; /* Number of lines to show */
+        -webkit-box-orient: vertical; /* Required for webkit browsers */
+        overflow: hidden; /* Hide the overflowed content */
+        text-overflow: ellipsis; /* Adds the '...' at the end */
+        height: 3em; /* Set a height for two lines (optional, adjust based on font size) */
+        line-height: 1.5em; /* Set line-height for the product title */
+        max-height: 3em; /* Max height for two lines */
+    }
+
+        /* Change title color on hover */
+        .product-title:hover {
+            color: #ff6600;
+        }
+
+    /* Styling for product image */
+    .product-img {
+        width: 160px;
+        height: 200px;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Slight zoom on hover */
+    .product:hover .product-img {
+        transform: scale(1.05);
+    }
+
+    /* Pricing section */
+    .product-price {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff6600;
+    }
+
+    /* Discount badge */
+    .discount {
+        background-color: #ff6600;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    /* Rating section */
+    .product-rating {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #999;
+    }
+
+    /* Add-to-cart button */
+    .add-to-cart {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .btn-cart {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-cart:hover {
+            background-color: #e65c00;
+        }
+
+    /* Styling for stars and rating */
+    .stars {
+        color: #ffd700; /* Gold color for stars */
+        font-size: 16px;
+    }
+
+    .rating, .sold {
+        color: #777;
+        font-size: 14px;
+    }
+
+    /* Additional hover effects */
+    .product:hover .btn-cart {
+        background-color: #e65c00;
+    }
+</style>
+
+<h2 style="margin-bottom:30px;">Kết quả tìm kiếm của bạn</h2>
+
+<p style="font-weight:bold">Cụm từ tìm kiếm: <strong style="color:red; font-style:italic">@ViewBag.searchTerm</strong></p>
+<div class="product-container">
+    @foreach (var a in ViewBag.list)
+    {
+        <div class="product">
+            <a href="~/Home/Detail?id=@a[0]" class="product-link">
+                <img src="~/Hinh/@a[5]" alt="Sản phẩm 1" class="product-img">
+                <h3 class="product-title">@a[1]</h3>
+            </a>
+            <div class="product-price">
+                <span class="current-price">@String.Format("{0:N0} VNĐ", Convert.ToDecimal(a[3]))</span>
+                <span class="discount">-20%</span>
+            </div>
+            <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating">(75)</span>
+                <span class="sold">| Đã bán 698</span>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <div class="add-to-cart">
+                <button type="button" class="btn-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+
+    }
+
+    <!-- Thêm nhiều sản phẩm khác -->
+</div>
+
+

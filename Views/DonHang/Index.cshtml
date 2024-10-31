@@ -1,0 +1,203 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    /* Đặt tông màu chính là màu cam */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #ff6600; /* Màu cam */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #ff6600; /* Màu cam */
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        table td {
+            color: #333;
+        }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block; /* Đảm bảo nút nằm cùng một hàng */
+        margin-right: 15px; /* Điều chỉnh khoảng cách giữa các nút */
+    }
+
+        /* Nút sửa */
+        .btn.edit {
+            background-color: #ffa500; /* Màu cam nhạt */
+            color: white;
+        }
+
+            .btn.edit:hover {
+                background-color: #ff8c00; /* Màu cam đậm khi hover */
+            }
+
+        /* Nút xóa */
+        .btn.delete {
+            background-color: #ff4d4d; /* Màu đỏ */
+            color: white;
+        }
+
+            .btn.delete:hover {
+                background-color: #ff1a1a; /* Màu đỏ đậm khi hover */
+            }
+
+    .alert-modal {
+        display: none; /* Mặc định là không hiển thị */
+        position: fixed; /* Cố định */
+        left: 0;
+        top: 0;
+        width: 100%; /* Toàn bộ chiều rộng */
+        height: 100%; /* Toàn bộ chiều cao */
+        background-color: rgba(0, 0, 0, 0.5); /* Nền tối với độ trong suốt */
+        z-index: 1000; /* Đặt lên trên các thành phần khác */
+        display: flex; /* Sử dụng flexbox để căn giữa */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+    }
+
+    .alert-content {
+        background-color: #ffcc00; /* Màu nền cam */
+        color: #fff; /* Màu chữ trắng */
+        padding: 20px;
+        border-radius: 5px; /* Bo tròn góc */
+        border: 1px solid #ff9900; /* Viền màu cam đậm hơn */
+        text-align: center; /* Căn giữa văn bản */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng cho hộp thông báo */
+        font-size: 18px; /* Kích thước chữ */
+    }
+
+
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #e55b00;
+        }
+
+    .notification-area {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        width: 300px;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .alert-success {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+    }
+
+    .alert-danger {
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+    }
+
+    /* Other CSS styles remain the same... */
+
+    .close-btn {
+        cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút đóng */
+        float: right; /* Đưa nút đóng sang bên phải */
+        font-size: 24px; /* Kích thước chữ lớn hơn cho sự rõ ràng */
+        color: red; /* Màu chữ đỏ */
+        padding: 5px; /* Thêm khoảng cách để tăng diện tích nhấp chuột */
+    }
+
+    a {
+        text-decoration: none; /* Xóa dấu gạch chân */
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Danh Sách Đơn Đặt Hàng</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã Đơn Hàng</th>
+                    <th>Tên Khách Hàng</th>
+                    <th>Ngày Đặt Hàng</th>
+                    <th>Trị Giá</th>
+                    <th>Trạng thái</th>
+                    <th>Hành Động</th> <!-- Cột để chứa nút Sửa và Xóa -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in ViewBag.list)
+                {
+                <tr>
+                    <td>@order[0]</td> <!-- Mã Đơn Hàng -->
+                    <td>@order[2]</td> <!-- Mã Khách Hàng -->
+                    <td>@order[3]</td> <!-- Tên Khách Hàng -->
+                    <td>@String.Format("{0:N0} VNĐ", Convert.ToDecimal(order[4]))</td> <!-- Ngày Đặt Hàng -->
+                    <td>@order[5]</td> <!-- Tên Khách Hàng -->
+                    <td>
+                        <a href="~/Donhang/Detail/@order[0]" class="btn edit">Xem</a>
+                    </td>
+                </tr>}
+            </tbody>
+        </table>
+    </div>
+</body>

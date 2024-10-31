@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "ThemSachMoi";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+    }
+
+    #container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    input[type="text"], textarea, select, input[type="file"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        font-size: 16px;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+        input[type="text"]:focus, textarea:focus, select:focus, input[type="file"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        margin-top: 20px;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    #imagePreview {
+        display: none;
+        margin-top: 10px;
+        max-width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .file-input-label {
+        display: block;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+        .file-input-label:hover {
+            border-color: #007bff;
+        }
+
+    .select-container {
+        margin-bottom: 20px;
+    }
+
+        .select-container select {
+            padding: 12px;
+            font-size: 16px;
+        }
+</style>
+
+<div id="container">
+    <form action="~/Sach/ThemSachMoi" method="post" enctype="multipart/form-data">
+        <h2>Thêm Sách Mới</h2>
+
+        <label for="tensach">Tên sách:</label>
+        <input type="text" id="tensach" name="tensach" required />
+
+        <label for="dongia">Đơn giá:</label>
+        <input type="text" id="dongia" name="dongia" required />
+
+        <label for="mota">Mô tả:</label>
+        <textarea id="mota" name="mota" required></textarea>
+
+        <label class="file-input-label" for="hinhminhhoa">Hình minh họa:</label>
+        <input type="file" id="hinhminhhoa" name="hinhminhhoa" accept="image/*" onchange="previewImage(event)" required />
+        <img id="imagePreview" src="#" alt="Hình minh họa" />
+
+        <div class="select-container">
+            <label for="machude">Mã chủ đề:</label>
+            <select name="machude" required>
+                @foreach (var b in ViewBag.listCD)
+                {
+                    <option value="@b[0]">@b[1]</option>
+                }
+            </select>
+        </div>
+
+        <div class="select-container">
+            <label for="manhaxuatban">Mã nhà xuất bản:</label>
+            <select name="manhaxuatban" required>
+                @foreach (var c in ViewBag.listNXB)
+                {
+                    <option value="@c[0]">@c[1]</option>
+                }
+            </select>
+        </div>
+        <div class="select-container">
+            <label for="tentacgia">Tên tác giả:</label>
+            <input type="text" id="tentacgia" name="tentacgia" required /> <!-- Nhập tên tác giả -->
+        </div>
+
+        <input type="submit" value="Thêm sách" />
+    </form>
+</div>
+
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('imagePreview');
+            output.src = reader.result;
+            output.style.display = 'block';
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>

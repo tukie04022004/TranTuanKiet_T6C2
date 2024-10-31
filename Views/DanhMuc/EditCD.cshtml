@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "EditCD";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+    }
+
+    #container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    input[type="text"], textarea, select, input[type="file"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        font-size: 16px;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+        input[type="text"]:focus, textarea:focus, select:focus, input[type="file"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        margin-top: 20px;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    #imagePreview {
+        display: none;
+        margin-top: 10px;
+        max-width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .file-input-label {
+        display: block;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+        .file-input-label:hover {
+            border-color: #007bff;
+        }
+
+    .select-container {
+        margin-bottom: 20px;
+    }
+
+        .select-container select {
+            padding: 12px;
+            font-size: 16px;
+        }
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .alert-danger {
+        color: #a94442; /* Màu chữ cho thông báo lỗi */
+        background-color: #f2dede; /* Màu nền cho thông báo lỗi */
+        border-color: #ebccd1; /* Màu viền cho thông báo lỗi */
+    }
+
+        .alert-danger h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .alert-danger .close {
+            color: inherit;
+            float: right;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 1;
+            opacity: 0.5;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+            .alert-danger .close:hover {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+</style>
+@if (ViewBag.Message != null)
+{
+<div class="alert alert-danger">
+    @ViewBag.Message
+</div>}
+
+<div id="container">
+    <form action="~/DanhMuc/EditCD" method="post" enctype="multipart/form-data">
+        <h2>Sửa chủ đề</h2>
+        <input type="hidden" name="id" value="@ViewBag.list[0][0]" />
+        <label for="tensach">Tên chủ đề:</label>
+        <input type="text" name="tendanhmuc" value="@ViewBag.list[0][1]" />
+        <input type="submit" value="Cập nhật" />
+    </form>
+</div>

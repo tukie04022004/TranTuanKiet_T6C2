@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "EditKH";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<style>
+    * {
+        box-sizing: border-box; /* Applies to all elements */
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8; /* Màu nền nhạt */
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ff6600; /* Màu cam cho tiêu đề */
+    }
+
+    form {
+        max-width: 100%;
+        width: 600px; /* Đảm bảo form chiếm toàn bộ chiều rộng có sẵn */
+        margin: 0 auto; /* Giữa màn hình */
+        background-color: #fff; /* Màu nền trắng cho biểu mẫu */
+        padding: 20px;
+        border-radius: 10px; /* Bo tròn góc */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+        box-sizing: border-box; /* Đảm bảo padding và border được tính trong chiều rộng */
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333; /* Màu chữ tối cho nhãn */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px; /* Bo tròn góc cho input */
+        font-size: 16px;
+        transition: border-color 0.3s; /* Hiệu ứng chuyển màu */
+    }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus {
+            border-color: #ff6600; /* Đổi màu viền khi focus */
+            outline: none; /* Bỏ viền ngoài */
+        }
+
+    input[type="radio"] {
+        margin-right: 10px; /* Tăng khoảng cách giữa radio và label */
+    }
+
+    .note {
+        font-size: 12px; /* Kích thước chữ nhỏ hơn */
+        color: #aaa; /* Màu xám cho ghi chú */
+        margin-bottom: 10px; /* Khoảng cách giữa ghi chú và trường input */
+    }
+
+    .gender-group {
+        display: flex; /* Sử dụng flex để đặt chúng ở cùng một hàng */
+        margin-bottom: 15px; /* Khoảng cách dưới nhóm giới tính */
+    }
+
+    .gender-option {
+        margin-right: 20px; /* Khoảng cách giữa các option */
+    }
+
+    button {
+        background-color: #ff6600; /* Màu nền cam cho nút */
+        color: white; /* Màu chữ trắng */
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px; /* Bo tròn góc cho nút */
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+    }
+
+        button:hover {
+            background-color: #e55b00; /* Đổi màu khi hover */
+        }
+</style>
+<body>
+    <h1>Cập Nhật Thông Tin Khách Hàng</h1>
+    <form action="~/TaiKhoan/EditKH" method="post" enctype="multipart/form-data">
+        <label for="hoten">Họ Tên:</label>
+        <input type="text" id="hoten" name="hoten" value="@ViewBag.list[0][1]">
+
+        <label for="diachi">Địa Chỉ:</label>
+        <input type="text" id="diachi" name="diachi" value="@ViewBag.list[0][2]">
+
+        <label for="dienthoai">Điện Thoại:</label>
+        <input type="text" id="dienthoai" name="dienthoai" value="@ViewBag.list[0][3]">
+
+        <label class="note">Ngày sinh của bạn là:@ViewBag.list[0][5]</label>
+        <input type="date" id="ngaysinh" name="ngaysinh">
+        <label class="note">Giới Tính của bạn là:@ViewBag.list[0][6]</label>
+        <label for="gioitinh">Giới Tính:</label>
+        <div class="gender-group">
+            <div class="gender-option">
+                <input type="radio" id="nam" name="gioitinh" value="true" required >
+                <label for="nam">Nam</label>
+            </div>
+            <div class="gender-option">
+                <input type="radio" id="nu" name="gioitinh" value="false" required >
+                <label for="nu">Nữ</label>
+            </div>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="@ViewBag.list[0][7]">
+
+        <button type="submit">Cập Nhật</button>
+    </form>
+</body>

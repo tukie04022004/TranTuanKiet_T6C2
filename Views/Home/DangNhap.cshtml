@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<style>
+    * {
+        box-sizing: border-box; /* Applies to all elements */
+    }
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f7f7f7;
+        margin: 0;
+    }
+
+    .container {
+        width: 450px; /* Fixed width */
+        max-width: 100%; /* Ensures it doesn't exceed 100% of the viewport width */
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: center;
+        color: #ff6600;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+    .form-control {
+        width: 100%; /* Ensures the input fields take the full width of the container */
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #ff6600;
+        }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #e55b00;
+        }
+
+
+    .notification-area {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        width: 300px;
+    }
+
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .alert-success {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+    }
+
+    .alert-danger {
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+    }
+
+    /* Other CSS styles remain the same... */
+
+    .close-btn {
+        cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút đóng */
+        float: right; /* Đưa nút đóng sang bên phải */
+        font-size: 24px; /* Kích thước chữ lớn hơn cho sự rõ ràng */
+        color: red; /* Màu chữ đỏ */
+        padding: 5px; /* Thêm khoảng cách để tăng diện tích nhấp chuột */
+    }
+
+    /* Other CSS styles remain the same... */
+
+    .alert-modal {
+        display: none; /* Mặc định là không hiển thị */
+        position: fixed; /* Cố định */
+        left: 0;
+        top: 0;
+        width: 100%; /* Toàn bộ chiều rộng */
+        height: 100%; /* Toàn bộ chiều cao */
+        background-color: rgba(0, 0, 0, 0.5); /* Nền tối với độ trong suốt */
+        z-index: 1000; /* Đặt lên trên các thành phần khác */
+        display: flex; /* Sử dụng flexbox để căn giữa */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+    }
+
+    .alert-content {
+        background-color: #ffcc00; /* Màu nền cam */
+        color: #fff; /* Màu chữ trắng */
+        padding: 20px;
+        border-radius: 5px; /* Bo tròn góc */
+        border: 1px solid #ff9900; /* Viền màu cam đậm hơn */
+        text-align: center; /* Căn giữa văn bản */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng cho hộp thông báo */
+        font-size: 18px; /* Kích thước chữ */
+    }
+</style>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div id="alert" class="alert-modal" style="display: flex;">
+        <div class="alert-content alert-danger">
+            <span class="close-btn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+            <p>@TempData["ErrorMessage"]</p>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <h2>Đăng Nhập</h2>
+
+    @using (Html.BeginForm("DangNhap", "Home"))
+    {
+        @Html.ValidationSummary(true, "", new { @class = "error-message" })
+
+        <div class="form-group">
+            <label for="tendn">Tên đăng nhập:</label>
+            @Html.TextBox("username", null, new { @class = "form-control", @id = "tendn", required = "required", placeholder = "Nhập tên đăng nhập" })
+        </div>
+
+        <div class="form-group">
+            <label for="matkhau">Mật khẩu:</label>
+            @Html.Password("password", null, new { @class = "form-control", @id = "matkhau", required = "required", placeholder = "Nhập mật khẩu" })
+        </div>
+
+        <button type="submit" class="btn">Đăng nhập</button>
+    }
+</div>
+

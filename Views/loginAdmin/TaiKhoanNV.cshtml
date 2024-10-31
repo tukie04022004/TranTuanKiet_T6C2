@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewBag.Title = "TaiKhoanNV";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #FF5733; /* Màu cam cho tiêu đề */
+    }
+
+    .profile-card {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #FF5733; /* Màu cam cho đường viền ảnh */
+        }
+
+    .profile-info {
+        flex: 2;
+        padding-left: 30px;
+    }
+
+        .profile-info h2 {
+            color: #FF5733; /* Màu cam cho tên người dùng */
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .profile-info p {
+            color: #666;
+            margin-bottom: 15px; /* Tăng khoảng cách giữa các hàng */
+            font-size: 16px;
+        }
+
+    .edit-button {
+        background-color: #FF5733; /* Màu cam cho nút */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        text-decoration: none; /* Loại bỏ gạch chân */
+    }
+
+        .edit-button:hover {
+            background-color: #FF4500; /* Màu cam đậm khi hover */
+        }
+
+    /* Nếu bạn muốn loại bỏ gạch chân cho tất cả các thẻ a */
+    a {
+        text-decoration: none; /* Loại bỏ gạch chân */
+    }
+
+        a:hover {
+            text-decoration: underline; /* Tùy chọn: thêm gạch chân khi hover */
+        }
+
+    .alert-modal {
+        display: none; /* Mặc định là không hiển thị */
+        position: fixed; /* Cố định */
+        left: 0;
+        top: 0;
+        width: 100%; /* Toàn bộ chiều rộng */
+        height: 100%; /* Toàn bộ chiều cao */
+        background-color: rgba(0, 0, 0, 0.5); /* Nền tối với độ trong suốt */
+        z-index: 1000; /* Đặt lên trên các thành phần khác */
+        display: flex; /* Sử dụng flexbox để căn giữa */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+    }
+
+    .alert-content {
+        background-color: #ffcc00; /* Màu nền cam */
+        color: #fff; /* Màu chữ trắng */
+        padding: 20px;
+        border-radius: 5px; /* Bo tròn góc */
+        border: 1px solid #ff9900; /* Viền màu cam đậm hơn */
+        text-align: center; /* Căn giữa văn bản */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng cho hộp thông báo */
+        font-size: 18px; /* Kích thước chữ */
+    }
+
+
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #e55b00;
+        }
+
+    .notification-area {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        width: 300px;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .alert-success {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+    }
+
+    .alert-danger {
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+    }
+
+    /* Other CSS styles remain the same... */
+
+    .close-btn {
+        cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút đóng */
+        float: right; /* Đưa nút đóng sang bên phải */
+        font-size: 24px; /* Kích thước chữ lớn hơn cho sự rõ ràng */
+        color: red; /* Màu chữ đỏ */
+        padding: 5px; /* Thêm khoảng cách để tăng diện tích nhấp chuột */
+    }
+
+    /* Other CSS styles remain the same... */
+</style>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="alert" class="alert-modal" style="display: flex;">
+        <div class="alert-content alert-success">
+            <span class="close-btn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+            <p>@TempData["SuccessMessage"]</p>
+        </div>
+    </div>}
+<body>
+    <div class="container">
+        <h1>Thông Tin Tài Khoản</h1>
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="~/Hinh/avatar.png" alt="Ảnh đại diện">
+            </div>
+            <div class="profile-info">
+                <h2>@ViewBag.list[0][1]</h2>
+                <p><strong>Họ tên:</strong>@ViewBag.list[0][1]</p>
+                <p><strong>Địa chỉ:</strong> @ViewBag.list[0][2]</p>
+                <p><strong>Điện thoại:</strong> @ViewBag.list[0][3]</p>
+                <p><strong>Chức vụ:</strong> @ViewBag.list[0][4]</p>
+                <p><strong>Lương:</strong> @String.Format("{0:N0} VNĐ", Convert.ToDecimal(ViewBag.list[0][5]))</p>
+                <p><strong>Ngày vào làm:</strong> @ViewBag.list[0][6]</p>
+                <a class="edit-button" href="~/loginAdmin/EditNV">Chỉnh sửa thông tin</a>
+            </div>
+        </div>
+    </div>
+</body>
+

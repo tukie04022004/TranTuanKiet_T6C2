@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            background-color: #d0021b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 10px 20px; /* Thêm khoảng cách trong */
+            flex-wrap: wrap; /* Đảm bảo các phần tử xuống dòng khi cần */
+        }
+
+            /* Hình ảnh banner */
+            .banner img {
+                max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung chứa */
+                height: auto; /* Đảm bảo tỷ lệ của hình ảnh được giữ nguyên */
+            }
+
+        /* Nội dung bên trong banner */
+        .banner-content {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; /* Thay đổi margin nhỏ hơn */
+            flex-wrap: wrap; /* Cho phép các phần tử con tự xuống dòng khi không đủ không gian */
+        }
+
+        .banner-right a {
+            background-color: #f0c14b;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-right: 20px; /* Thêm khoảng cách cho nút */
+        }
+
+        /* Navigation */
+        .navigation {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px auto; /* Canh giữa */
+            background-color: #f9f9f9; /* Màu nền */
+        }
+
+            .search-bar input[type="text"] {
+                border: none;
+                outline: none; /* Bỏ viền khi có focus */
+                flex: 1; /* Giãn rộng ô nhập */
+                padding: 5px; /* Khoảng cách bên trong */
+                font-size: 16px; /* Kích thước chữ */
+                border-radius: 5px; /* Bo góc */
+                background-color: #fff; /* Màu nền cho ô nhập */
+                height: 30px; /* Đặt chiều cao đồng bộ với .search-bar */
+            }
+
+            .search-bar button {
+                background-color: #f57c00; /* Nền cho nút bấm */
+                border: none; /* Bỏ viền */
+                cursor: pointer; /* Thay đổi con trỏ khi di chuột */
+                padding: 5px; /* Khoảng cách bên trong */
+                height: 30px; /* Đặt chiều cao đồng bộ với ô nhập */
+            }
+
+                .search-bar button img {
+                    width: 20px; /* Chiều rộng của biểu tượng tìm kiếm */
+                    height: 20px; /* Chiều cao của biểu tượng tìm kiếm */
+                }
+
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+            .nav-icons div {
+                margin-left: 20px;
+                color: #333;
+            }
+
+            .nav-icons img {
+                margin-right: 5px;
+            }
+
+        .flag-icon {
+            width: 50px;
+        }
+
+        .main-layout {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #f57c00; /* Màu cam */
+            padding: 20px;
+            width: 250px; /* Chiều rộng của sidebar */
+            color: #fff; /* Màu chữ trắng */
+            font-family: Arial, sans-serif;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .sidebar-menu li {
+                margin-bottom: 10px;
+            }
+
+                .sidebar-menu li a {
+                    text-decoration: none;
+                    color: #fff; /* Màu chữ trong các mục */
+                    background-color: #e65100; /* Màu cam đậm cho mục */
+                    padding: 10px;
+                    display: block;
+                    border-radius: 3px;
+                    transition: background-color 0.3s;
+                }
+
+                    /* Hiệu ứng hover */
+                    .sidebar-menu li a:hover {
+                        background-color: #ff9800; /* Màu cam nhạt khi hover */
+                        padding-left: 15px; /* Tạo hiệu ứng chuyển động nhẹ khi hover */
+                    }
+
+        .content {
+            width: 80%;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .cart-icon-container {
+            display: flex;
+            flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+            align-items: center; /* Căn giữa icon và text */
+            text-align: center;
+        }
+
+        .cart-icon {
+            width: 30px; /* Kích thước của icon giỏ hàng */
+            height: auto;
+        }
+
+        .acc-icon {
+            width: 30px; /* Kích thước của icon giỏ hàng */
+            height: auto;
+        }
+
+        .acc-text {
+            margin-top: 5px; /* Khoảng cách giữa icon và chữ */
+            font-size: 14px; /* Kích thước chữ */
+            color: #333; /* Màu chữ */
+        }
+
+        .cart-text {
+            margin-top: 5px; /* Khoảng cách giữa icon và chữ */
+            font-size: 14px; /* Kích thước chữ */
+            color: #333; /* Màu chữ */
+        }
+        /* Phong cách cho footer */
+        /* Phong cách cho footer */
+        .footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Chia 4 cột đều nhau */
+            gap: 20px; /* Khoảng cách giữa các cột */
+        }
+
+        .footer-column {
+            margin: 10px 0;
+        }
+
+        .footer-logo {
+            width: 200px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .footer-column ul li {
+                margin-bottom: 5px;
+            }
+
+                .footer-column ul li a {
+                    text-decoration: none;
+                    color: #333;
+                }
+
+                    .footer-column ul li a:hover {
+                        color: #ff4d4d;
+                    }
+
+        /* Phần liên hệ */
+        .footer-contact h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+        /* Phần các icon thanh toán */
+        .footer-payment-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+            .footer-payment-icons img {
+                width: 100px;
+                margin: 0 10px;
+            }
+
+        .footer-bottom-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .cart-icon-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%; /* Xuống dưới biểu tượng tài khoản */
+            left: -150%; /* Đẩy sang trái */
+            border: 1px solid #ccc;
+            border-radius: 4px; /* Bo góc cho ô */
+            z-index: 1;
+            padding: 10px; /* Thêm khoảng đệm cho ô */
+        }
+
+        .dropdown-button {
+            display: block;
+            width: 120px; /* Chiều rộng ô lớn hơn */
+            padding: 15px; /* Tăng khoảng đệm cho nút */
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            margin: 5px 0;
+            border-radius: 4px; /* Bo góc */
+            font-size: 16px; /* Tăng kích thước chữ */
+        }
+
+        .red {
+            background-color: red; /* Màu đỏ */
+        }
+
+        .orange {
+            background-color: orange; /* Màu cam */
+        }
+
+        .cart-icon-container:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <img src="~/Hinh/banner.png" alt="Banner Left">
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="logo">
+            <a href="~/Home/Index"><img src="~/Hinh/logo.png" /></a>
+        </div>
+        <div class="search-bar">
+            <form action="~/Sach/TimKiemTenSach" method="get">
+                <input type="text" placeholder="Tìm kiếm" name="tensach" required>
+                <button type="submit">
+                    <img src="~/Hinh/searchLogo.png" alt="Search">
+                </button>
+            </form>
+        </div>
+
+
+        <div class="nav-icons">
+            
+            <div class="cart-icon-container">
+                @if (Session["taikhoanad"] != null) // Check if user is logged in
+                {
+                    <img src="~/Hinh/accLogo.png" alt="User Icon" class="acc-icon">
+                    <p class="acc-text">@Session["taikhoanad"]</p> <!-- Display user name -->
+
+            <div class="dropdown">
+                <a href="~/loginAdmin/TaiKhoanNV" class="dropdown-button orange">Tài khoản</a>
+                <a href="~/Home/Logout" class="dropdown-button red">Đăng xuất</a> <!-- Logout button -->
+            </div>
+                }
+                else
+                {
+                    <img src="~/Hinh/accLogo.png" alt="Acc Icon" class="acc-icon">
+                    <p class="acc-text">Tài khoản</p>
+
+                    <div class="dropdown">
+                        <a href="~/Sach/DangNhapAd" class="dropdown-button orange">Đăng nhập</a>
+                    </div>
+                }
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3 class="sidebar-title">Quản lý</h3>
+            <ul class="sidebar-menu">
+
+                <li><a href="~/Sach/Index">Sách</a></li>
+                <li><a href="~/Kho/Index">Kho</a></li>
+                <li><a href="~/DonHang/Index">Đơn hàng</a></li>
+                <li><a href="~/DanhMuc/Index">Danh mục</a></li>
+
+            </ul>
+        </div>
+        <!-- Content -->
+        <section class="content">
+            @RenderBody()
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Phần thông tin công ty -->
+            <div class="footer-column">
+                <img src="~/Hinh/LogoBig.png" alt="HCMBook Logo" class="footer-logo">
+                <p>Hóc Môn TP HCM</p>
+                <p>Công Ty Cổ Phần Phát Hành Sách TP HCM - HCMBOOK</p>
+                <p>HUFLIT, Hóc Môn, TP. HCM, Việt Nam</p>
+                <p>HCMBook.com nhận đặt hàng trực tuyến và giao hàng tận nơi...</p>
+            </div>
+
+            <!-- Phần dịch vụ -->
+            <div class="footer-column">
+                <h4>Dịch Vụ</h4>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+                    <li><a href="#">Chính sách bảo mật thanh toán</a></li>
+                    <li><a href="#">Giới thiệu HCM-Book</a></li>
+                </ul>
+            </div>
+
+            <!-- Phần hỗ trợ -->
+            <div class="footer-column">
+                <h4>Hỗ Trợ</h4>
+                <ul>
+                    <li><a href="#">Chính sách đổi - hoàn tiền</a></li>
+                    <li><a href="#">Chính sách bảo hành - bồi hoàn</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách khách sỉ</a></li>
+                </ul>
+            </div>
+
+            <!-- Phần tài khoản của tôi -->
+            <div class="footer-column">
+                <h4>Tài Khoản Của Tôi</h4>
+                <ul>
+                    <li><a href="#">Đăng nhập/Tạo mới tài khoản</a></li>
+                    <li><a href="#">Thay đổi địa chỉ khách hàng</a></li>
+                    <li><a href="#">Chi tiết tài khoản</a></li>
+                    <li><a href="#">Lịch sử mua hàng</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-payment-icons">
+            <img src="~/Hinh/vnpost1.png" alt="vnpost">
+            <img src="~/Hinh/ahamove_logo3.png" alt="ahamove">
+            <img src="~/Hinh/icon_snappy1.png" alt="snappy">
+            <img src="~/Hinh/Logo_ninjavan.png" alt="ninjavan">
+            <img src="~/Hinh/vnpay_logo.png" alt="VNPAY">
+            <img src="~/Hinh/momopay.png" alt="Momo">
+            <img src="~/Hinh/shopeepay_logo.png" alt="Shopee Pay">
+        </div>
+        <!-- Phần liên hệ và biểu tượng thanh toán -->
+        <div class="footer-contact">
+            <h4>Liên Hệ</h4>
+            <p><i class="fa fa-map-marker"></i> HUFLIT, Hóc Môn, TP. HCM, Việt Nam</p>
+            <p><i class="fa fa-envelope"></i> cskhhcmbook.com.vn</p>
+            <p><i class="fa fa-phone"></i> 1900636477</p>
+        </div>
+
+        <!-- Phần các icon thanh toán -->
+
+        <p class="footer-bottom-text">
+            Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2023, đăng ký thay đổi lần thứ 2, ngày 20/05/2024.
+        </p>
+    </footer>
+</body>
+</html>

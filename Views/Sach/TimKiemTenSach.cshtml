@@ -1,0 +1,311 @@
+﻿
+@{
+    ViewBag.Title = "TimKiemTenSach";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Khoảng cách giữa các sản phẩm */
+        justify-content: flex-start; /* Đặt các sản phẩm về phía trái và giữ khoảng cách giữa chúng */
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    .product {
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        width: 250px;
+        height: 450px;
+    }
+
+        /* Add hover effect for product */
+        .product:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+    /* Styling for the product link */
+    .product-link {
+        text-decoration: none;
+        color: #333;
+    }
+
+    /* Styling for the product title */
+    .product-title {
+        display: -webkit-box; /* Required for webkit browsers */
+        -webkit-line-clamp: 2; /* Number of lines to show */
+        -webkit-box-orient: vertical; /* Required for webkit browsers */
+        overflow: hidden; /* Hide the overflowed content */
+        text-overflow: ellipsis; /* Adds the '...' at the end */
+        height: 3em; /* Set a height for two lines (optional, adjust based on font size) */
+        line-height: 1.5em; /* Set line-height for the product title */
+        max-height: 3em; /* Max height for two lines */
+    }
+
+        /* Change title color on hover */
+        .product-title:hover {
+            color: #ff6600;
+        }
+
+    /* Styling for product image */
+    .product-img {
+        width: 160px;
+        height: 200px;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Slight zoom on hover */
+    .product:hover .product-img {
+        transform: scale(1.05);
+    }
+
+    /* Pricing section */
+    .product-price {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff6600;
+    }
+
+    /* Discount badge */
+    .discount {
+        background-color: #ff6600;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    /* Rating section */
+    .product-rating {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #999;
+    }
+
+    /* Add-to-cart button */
+    .add-to-cart {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .btn-cart {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-cart:hover {
+            background-color: #e65c00;
+        }
+
+    /* Styling for stars and rating */
+    .stars {
+        color: #ffd700; /* Gold color for stars */
+        font-size: 16px;
+    }
+
+    .rating, .sold {
+        color: #777;
+        font-size: 14px;
+    }
+
+    /* Additional hover effects */
+    .product:hover .btn-cart {
+        background-color: #e65c00;
+    }
+
+    .add-to-cart {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-cart {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        .btn-cart:hover {
+            background-color: #e65c00;
+        }
+
+    .btn-delete {
+        background-color: #ff3333;
+    }
+
+        .btn-delete:hover {
+            background-color: #cc0000;
+        }
+
+    .author-name {
+        font-size: 1.2em; /* Kích thước chữ cho tên tác giả */
+        color: #3498db; /* Màu chữ cho tên tác giả (xanh lam) */
+        margin: 5px 0; /* Khoảng cách trên và dưới */
+        white-space: nowrap; /* Không ngắt dòng */
+        overflow: hidden; /* Ẩn phần văn bản thừa */
+        text-overflow: ellipsis; /* Hiển thị dấu ba chấm */
+        max-width: 200px; /* Chiều rộng tối đa */
+    }
+
+    .add-product {
+        margin-bottom: 20px;
+        margin-left: 40px; /* Space below the button */
+        text-align: left; /* Center the button */
+    }
+
+    .btn-add-product {
+        background-color: #ff6600; /* Green color */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s;
+    }
+
+        .btn-add-product:hover {
+            background-color: #e65c00; /* Darker green on hover */
+        }
+
+    .alert-modal {
+        display: none; /* Mặc định là không hiển thị */
+        position: fixed; /* Cố định */
+        left: 0;
+        top: 0;
+        width: 100%; /* Toàn bộ chiều rộng */
+        height: 100%; /* Toàn bộ chiều cao */
+        background-color: rgba(0, 0, 0, 0.5); /* Nền tối với độ trong suốt */
+        z-index: 1000; /* Đặt lên trên các thành phần khác */
+        display: flex; /* Sử dụng flexbox để căn giữa */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+    }
+
+    .alert-content {
+        background-color: #ffcc00; /* Màu nền cam */
+        color: #fff; /* Màu chữ trắng */
+        padding: 20px;
+        border-radius: 5px; /* Bo tròn góc */
+        border: 1px solid #ff9900; /* Viền màu cam đậm hơn */
+        text-align: center; /* Căn giữa văn bản */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng cho hộp thông báo */
+        font-size: 18px; /* Kích thước chữ */
+    }
+
+
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #e55b00;
+        }
+
+    .notification-area {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        width: 300px;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .alert-success {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+    }
+
+    .alert-danger {
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+    }
+
+    /* Other CSS styles remain the same... */
+
+    .close-btn {
+        cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút đóng */
+        float: right; /* Đưa nút đóng sang bên phải */
+        font-size: 24px; /* Kích thước chữ lớn hơn cho sự rõ ràng */
+        color: red; /* Màu chữ đỏ */
+        padding: 5px; /* Thêm khoảng cách để tăng diện tích nhấp chuột */
+    }
+</style>
+<h2 style="margin-bottom:30px;">Kết quả tìm kiếm của bạn</h2>
+
+<p style="font-weight:bold">Cụm từ tìm kiếm: <strong style="color:red; font-style:italic">@ViewBag.searchTerm</strong></p>
+<div class="product-container">
+
+    @foreach (var a in ViewBag.list)
+    {
+
+
+        <div class="product">
+            <a href="~/Sach/Details?id=@a[0]" class="product-link">
+                <img src="~/Hinh/@a[5]" alt="Sản phẩm 1" class="product-img">
+                <h3 class="product-title">@a[1]</h3>
+            </a>
+            <h4 class="author-name">@a[13]</h4> <!-- Thêm tên tác giả ở đây -->
+            <div class="product-price">
+                <span class="current-price">@String.Format("{0:N0} VNĐ", Convert.ToDecimal(a[3]))</span>
+            </div>
+            <div class="product-rating">
+                <span class="sold">| Số lượng trong kho: @a[11]</span> <!-- Sửa lại để lấy đúng số lượng trong kho -->
+            </div>
+
+            <!-- Add to Cart Button -->
+            <div class="add-to-cart">
+                <!-- Chi tiết button -->
+                <a href="~/Sach/Details?id=@a[0]" class="btn-cart">Chi tiết</a>
+
+                <!-- Xóa button -->
+                <a href="~/Sach/XoaSach?id=@a[0]" class="btn-cart">Xóa</a>
+            </div>
+        </div>
+
+
+    }
+ </div>

@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+   
+
+    .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        margin: auto;
+        font-size: 16px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #FF5722; /* Màu cam chủ đạo */
+        margin-bottom: 20px;
+    }
+
+    .recipient-info,
+    .order-details {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff3e0; /* Nền nhẹ nhàng màu cam */
+    }
+
+    h2 {
+        color: #FF5722; /* Màu cam cho tiêu đề */
+        margin-bottom: 15px;
+    }
+
+    .recipient-info p {
+        margin-bottom: 10px; /* Thêm khoảng cách giữa các thông tin */
+        line-height: 1.5; /* Tăng khoảng cách dòng */
+    }
+
+    .order-details table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    .order-details th, .order-details td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .order-details th {
+        background-color: #ffccbc; /* Màu nền cho tiêu đề bảng */
+        color: #333;
+    }
+
+    .order-details tr:hover {
+        background-color: #ffe0b2; /* Hiệu ứng hover cho hàng */
+    }
+
+    .total-row {
+        font-weight: bold;
+        background-color: #ffccbc; /* Nền cho hàng tổng cộng */
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Chi Tiết Đơn Hàng</h1>
+
+        <!-- Thông tin người nhận -->
+        <div class="recipient-info">
+            <h2>Thông Tin Người Nhận</h2>
+            <p><strong>Tên Người Nhận:</strong> @ViewBag.list[0][7]</p>
+            <p><strong>Địa Chỉ Nhận:</strong> @ViewBag.list[0][8]</p>
+            <p><strong>Điện Thoại:</strong> @ViewBag.list[0][9]</p>
+            <p><strong>Ngày Giao Hàng:</strong> @ViewBag.list[0][6]</p>
+        </div>
+
+        <!-- Chi tiết sản phẩm -->
+        <div class="order-details">
+            <h2>Chi Tiết Sản Phẩm</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Đơn Giá</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var a in ViewBag.listCT)
+                    {
+        <tr>
+            <td>@a[2]</td>
+            <td>@a[3]</td>
+            <td>@String.Format("{0:N0} VNĐ", Convert.ToDecimal(a[4]))</td>
+            <td>@String.Format("{0:N0} VNĐ", Convert.ToDecimal(a[5]))</td>
+        </tr>}
+                    <tr class="total-row">
+                        <td colspan="3" style="text-align: right;"><strong>Tổng Cộng:</strong></td>
+                        <td><strong>@String.Format("{0:N0} VNĐ", Convert.ToDecimal(ViewBag.list[0][4]))</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+

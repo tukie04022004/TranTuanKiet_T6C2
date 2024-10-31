@@ -1,0 +1,344 @@
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\WebNhaSach.dll.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\WebNhaSach.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\WebNhaSach.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\csc.exe
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\csc.exe.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\csc.rsp
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\csi.exe
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\csi.exe.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\csi.rsp
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.AppContext.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Console.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.IO.Compression.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Net.Http.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Net.Sockets.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.ValueTuple.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\vbc.exe
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\vbc.exe.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\vbc.rsp
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\VBCSCompiler.exe
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Antlr3.Runtime.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Newtonsoft.Json.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Helpers.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Mvc.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Optimization.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Razor.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.WebPages.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.WebPages.Razor.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\WebGrease.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Helpers.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Mvc.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Optimization.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.Razor.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.WebPages.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Web.WebPages.Razor.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Newtonsoft.Json.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Antlr3.Runtime.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\obj\Debug\WebNhaSach.csproj.CoreCompileInputs.cache
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\obj\Debug\WebNhaSach.csproj.CopyComplete
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\obj\Debug\WebNhaSach.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\obj\Debug\WebNhaSach.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\obj\Debug\WebNhaSach.csproj.AssemblyReference.cache
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\sqlceca40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\sqlcecompact40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\sqlceer40EN.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\sqlceme40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\sqlceqp40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\amd64\sqlcese40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\sqlceca40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\sqlcecompact40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\sqlceer40EN.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\sqlceme40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\sqlceqp40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\x86\sqlcese40.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\BouncyCastle.Cryptography.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.Annotation.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.Web.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MailKit.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.Owin.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MimeKit.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MiniProfiler.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MiniProfiler.Shared.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\NPoco.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Owin.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Semver.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Enrichers.Process.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Enrichers.Thread.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Filters.Expressions.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Formatting.Compact.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Formatting.Compact.Reader.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Settings.AppSettings.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.Async.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.File.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.Map.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Superpower.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Buffers.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Data.SqlServerCe.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Data.SqlServerCe.Entity.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Formats.Asn1.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Memory.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Net.Http.Formatting.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Numerics.Vectors.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.ValueTuple.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Umbraco.Core.dll
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\BouncyCastle.Cryptography.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.Annotation.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.Web.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\LightInject.Web.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MailKit.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MailKit.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MailKit.dll.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Microsoft.Owin.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MimeKit.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MimeKit.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MimeKit.dll.config
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MiniProfiler.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\MiniProfiler.Shared.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Semver.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Enrichers.Process.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Enrichers.Thread.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Filters.Expressions.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Formatting.Compact.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Formatting.Compact.Reader.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.Async.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.File.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.File.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Serilog.Sinks.Map.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Superpower.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Buffers.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Formats.Asn1.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Memory.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Net.Http.Formatting.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Numerics.Vectors.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\System.ValueTuple.xml
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Umbraco.Core.pdb
+C:\Users\HUYEN KUTE\source\repos\WebNhaSach\bin\Umbraco.Core.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\sqlceca40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\sqlcecompact40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\sqlceer40EN.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\sqlceme40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\sqlceqp40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\amd64\sqlcese40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\sqlceca40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\sqlcecompact40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\sqlceer40EN.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\sqlceme40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\sqlceqp40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\x86\sqlcese40.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\WebNhaSach.dll.config
+D:\CNPM_NC\LT\WebNhaSach\bin\WebNhaSach.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\WebNhaSach.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\csc.exe
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\csc.exe.config
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\csc.rsp
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\csi.exe
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\csi.exe.config
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\csi.rsp
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.AppContext.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Collections.Immutable.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Console.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.IO.Compression.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.IO.FileSystem.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Net.Http.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Net.Sockets.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.ValueTuple.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Xml.XPath.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\vbc.exe
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\vbc.exe.config
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\vbc.rsp
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\VBCSCompiler.exe
+D:\CNPM_NC\LT\WebNhaSach\bin\roslyn\VBCSCompiler.exe.config
+D:\CNPM_NC\LT\WebNhaSach\bin\Antlr3.Runtime.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\BouncyCastle.Cryptography.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.Annotation.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.Web.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\MailKit.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.AspNet.Identity.Core.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.Owin.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.Web.Infrastructure.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\MimeKit.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\MiniProfiler.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\MiniProfiler.Shared.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Newtonsoft.Json.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\NPoco.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Owin.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Semver.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Enrichers.Process.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Enrichers.Thread.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Filters.Expressions.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Formatting.Compact.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Formatting.Compact.Reader.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Settings.AppSettings.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.Async.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.File.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.Map.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Superpower.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Buffers.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Data.SqlServerCe.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Data.SqlServerCe.Entity.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Formats.Asn1.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Memory.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Net.Http.Formatting.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Numerics.Vectors.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Threading.Tasks.Extensions.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.ValueTuple.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Helpers.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Mvc.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Optimization.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Razor.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.WebPages.Deployment.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.WebPages.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.WebPages.Razor.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\Umbraco.Core.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\WebGrease.dll
+D:\CNPM_NC\LT\WebNhaSach\bin\BouncyCastle.Cryptography.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.Annotation.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.Web.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\LightInject.Web.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\MailKit.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\MailKit.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\MailKit.dll.config
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.AspNet.Identity.Core.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.Owin.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\MimeKit.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\MimeKit.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\MimeKit.dll.config
+D:\CNPM_NC\LT\WebNhaSach\bin\MiniProfiler.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\MiniProfiler.Shared.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Semver.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Enrichers.Process.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Enrichers.Thread.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Filters.Expressions.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Formatting.Compact.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Formatting.Compact.Reader.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.Async.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.File.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.File.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Serilog.Sinks.Map.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Superpower.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Buffers.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Diagnostics.DiagnosticSource.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Formats.Asn1.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Memory.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Net.Http.Formatting.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Numerics.Vectors.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Threading.Tasks.Extensions.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.ValueTuple.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Helpers.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Mvc.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Optimization.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.Razor.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.WebPages.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.WebPages.Deployment.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\System.Web.WebPages.Razor.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Newtonsoft.Json.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Umbraco.Core.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\Umbraco.Core.xml
+D:\CNPM_NC\LT\WebNhaSach\bin\Antlr3.Runtime.pdb
+D:\CNPM_NC\LT\WebNhaSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNPM_NC\LT\WebNhaSach\obj\Debug\WebNhaSach.csproj.AssemblyReference.cache
+D:\CNPM_NC\LT\WebNhaSach\obj\Debug\WebNhaSach.csproj.CoreCompileInputs.cache
+D:\CNPM_NC\LT\WebNhaSach\obj\Debug\WebNhaSach.csproj.CopyComplete
+D:\CNPM_NC\LT\WebNhaSach\obj\Debug\WebNhaSach.dll
+D:\CNPM_NC\LT\WebNhaSach\obj\Debug\WebNhaSach.pdb
