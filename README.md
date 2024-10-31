@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-  📚 HCM-Book - Nền Tảng Mua Sắm Sách Trực Tuyến
-</head>
+<head></head>
 <body>
 
-<h1>My First Heading</h1>
+<h1>📚 HCM-Book - Nền Tảng Mua Sắm Sách Trực Tuyến</h1>
 <p>My first paragraph.</p>
 
 </body>
