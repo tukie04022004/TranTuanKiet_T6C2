@@ -13,7 +13,9 @@
 <p></p>
 
 <h1>🔑 Tính Năng Nổi Bật</h1>
-<h2>📖 Quản Lý Sách<h2>
-<p></p>
+<p>📖 Quản Lý Sách</p>
+<p>Phân loại sách theo thể loại, tác giả, nhà xuất bản giúp người mua dễ dàng lựa chọn.</p>
+<p>Tìm kiếm thông minh giúp tìm kiếm nhanh chóng với từ khóa linh hoạt.</p>
+
 </body>
 </html>
