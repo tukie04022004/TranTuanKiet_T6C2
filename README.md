@@ -25,7 +25,7 @@
 <h2>🔒 Bảo Mật</h2>
 <p>Thông tin khách hàng và nhân viên đều được mã hóa, bảo mật ở mức tối đa.</p>
 <h1>Contact me:</h1>
+<p>+84938574924</p>
 <a href="mailto:tukie04022004@gmail.com">Gửi email cho tôi</a>
-<a href="tel:+84938574924">Gọi cho tôi</a>
 </body>
 </html>
