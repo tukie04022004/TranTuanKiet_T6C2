@@ -9,6 +9,11 @@
 <h1>🌟 Mục Tiêu</h1>
 <p>Với mong muốn trở thành điểm đến lý tưởng cho những người yêu sách, HCM-Book phát triển một hệ thống quản lý và mua sắm sách trực tuyến, nhằm tối ưu hóa các thao tác mua sắm từ quản lý sách đến quy trình thanh toán, giúp khách hàng có thể mua sách bất cứ lúc nào, ở bất cứ đâu.</p>
 
+<h1></h1>
+<p></p>
 
+<h1>🔑 Tính Năng Nổi Bật</h1>
+<h2>📖 Quản Lý Sách<h2>
+<p></p>
 </body>
 </html>
