@@ -1,7 +1,19 @@
-Công ty HCM-Book là một đơn vị chuyên kinh doanh về sách gồm đa dạng các mãng như tiểu thuyết, văn học, viễn tưởng, sách giáo khoa,... Tồn tại được trong nhiều năm nay và được một số lượng lớn khách hàng tin tưởng và yêu thích.
+📚 HCM-Book - Nền Tảng Mua Sắm Sách Trực Tuyến
+HCM-Book là nền tảng thương mại điện tử chuyên về sách, phục vụ tất cả các tín đồ yêu sách. Từ tiểu thuyết, văn học, viễn tưởng, đến sách giáo khoa, HCM-Book cung cấp đa dạng thể loại cho mọi đối tượng. Chúng tôi cam kết mang đến trải nghiệm mua sắm trực tuyến nhanh chóng và tiện lợi cho khách hàng, giúp tiết kiệm thời gian và công sức.
 
-Với mục tiêu trở thành điểm đến lý tưởng cho những người yêu sách, chúng tôi xây dựng một hệ thống thương mại điện tử,  cung cấp dịch vụ mua sắm trực tuyến, mang lại trải nghiệm tiện lợi và hiện đại đến cho khách hàng giúp khách hàng tiết kiệm nhiều thời gian, công sức.  
 
-Ứng dụng quản lý nhà sách được thiết kế để tối ưu hóa toàn bộ quá trình kinh doanh từ quản lý sách, kho hàng, đến chăm sóc khách hàng và theo dõi doanh thu. Với giao diện thân thiện và dễ sử dụng, ứng dụng cho phép bạn dễ dàng thêm mới, chỉnh sửa và phân loại sách theo nhiều tiêu chí như thể loại, tác giả, và nhà xuất bản. Tính năng tìm kiếm thông minh giúp khách hàng nhanh chóng tìm thấy cuốn sách yêu thích của mình chỉ với vài thao tác. Tính năng quản lý kho giúp theo dõi số lượng tồn kho và cảnh báo khi sắp hết hàng. Ngoài ra, ứng dụng còn hỗ trợ quản lý đơn hàng và thanh toán trực tuyến, theo dõi lịch trình giao hàng giúp nâng cao trải nghiệm khách hàng. Tất cả thông tin về khách hàng, nhân viên và các giao dịch đều được bảo mật an toàn, đảm bảo sự tin cậy và bảo mật tối đa. 
+🌟 Mục Tiêu
+Với mong muốn trở thành điểm đến lý tưởng cho những người yêu sách, HCM-Book phát triển một hệ thống quản lý và mua sắm sách trực tuyến, nhằm tối ưu hóa các thao tác mua sắm từ quản lý sách đến quy trình thanh toán, giúp khách hàng có thể mua sách bất cứ lúc nào, ở bất cứ đâu.
 
-Công ty cam kết mang lại trải nghiệm mua sắm nhanh chóng, tiện lợi, giúp khách hàng có thể mua sách bất cứ lúc nào, ở bất cứ đâu mà không bị giới hạn về địa lý hay thời gian.
+🔑 Tính Năng Nổi Bật
+📖 Quản Lý Sách
+Phân loại sách theo thể loại, tác giả, nhà xuất bản giúp người mua dễ dàng lựa chọn.
+Tìm kiếm thông minh giúp tìm kiếm nhanh chóng với từ khóa linh hoạt.
+🏬 Quản Lý Kho Hàng
+Theo dõi số lượng sách trong kho và cảnh báo khi sắp hết hàng.
+Quản lý nhập/xuất kho, giúp tối ưu hóa nguồn lực và giảm thiểu tình trạng hết hàng.
+🛒 Hệ Thống Đặt Hàng và Thanh Toán
+Quản lý đơn hàng và tích hợp thanh toán trực tuyến an toàn.
+Theo dõi lịch trình giao hàng trực tiếp trên hệ thống, đảm bảo hàng hóa đến tay khách hàng nhanh chóng.
+🔒 Bảo Mật
+Thông tin khách hàng và nhân viên đều được mã hóa, bảo mật ở mức tối đa.
