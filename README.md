@@ -16,6 +16,8 @@
 <h2>📖 Quản Lý Sách</h2>
 <p>Phân loại sách theo thể loại, tác giả, nhà xuất bản giúp người mua dễ dàng lựa chọn.</p>
 <p>Tìm kiếm thông minh giúp tìm kiếm nhanh chóng với từ khóa linh hoạt.</p>
-
+<h2>🏬 Quản Lý Kho Hàng</h2>
+<p>Theo dõi số lượng sách trong kho và cảnh báo khi sắp hết hàng.
+Quản lý nhập/xuất kho, giúp tối ưu hóa nguồn lực và giảm thiểu tình trạng hết hàng.</p>
 </body>
 </html>
