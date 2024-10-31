@@ -24,7 +24,7 @@
 <p>Theo dõi lịch trình giao hàng trực tiếp trên hệ thống, đảm bảo hàng hóa đến tay khách hàng nhanh chóng.</p>
 <h2>🔒 Bảo Mật</h2>
 <p>Thông tin khách hàng và nhân viên đều được mã hóa, bảo mật ở mức tối đa.</p>
-<h1>Contact me:</h1>
+<h1>Contact us:</h1>
 <p>+84938574924</p>
 <a href="mailto:tukie04022004@gmail.com">Gửi email cho tôi</a>
 </body>
